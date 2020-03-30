@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatBalloon it should render listener correctly 1`] = `
+<div>
+  <styled.div
+    type="listener"
+  >
+    this is a test
+  </styled.div>
+  <styled.span
+    data-info="timer"
+  >
+    08:00 am
+  </styled.span>
+</div>
+`;
+
+exports[`ChatBalloon it should render sender correctly 1`] = `
+<div>
+  <styled.div
+    type="sender"
+  >
+    this is a test
+  </styled.div>
+  <styled.span
+    data-info="timer"
+  >
+    08:00 am
+  </styled.span>
+</div>
+`;
