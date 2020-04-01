@@ -9,9 +9,9 @@ describe('ChatBalloon', () => {
     const wrapper = shallow(
       <ChatBalllon content={expectText} time={timeExpect} type={submitType} />,
     );
-    console.log(wrapper.debug());
-    const content = wrapper.find('[type="sender"]').text();
-    console.log(content);
+    
+    const content = wrapper.find('[data-chat-type="sender"]').text();
+    
     const timeContent = wrapper.find('[data-info="timer"]').text();
     expect(wrapper).toMatchSnapshot();
 
@@ -27,8 +27,7 @@ describe('ChatBalloon', () => {
       <ChatBalllon content={expectText} time={timeExpect} type={submitType} />,
     );
 
-    console.log(wrapper.debug());
-    const content = wrapper.find('[type="listener"]').text();
+    const content = wrapper.find('[data-chat-type="listener"]').text();
 
     const timeContent = wrapper.find('[data-info="timer"]').text();
     expect(wrapper).toMatchSnapshot();

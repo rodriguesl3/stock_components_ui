@@ -9,7 +9,9 @@ interface ChatProps {
 
 const ChatBalloon: React.FC<ChatProps> = props => (
   <div>
-    <Chat type={props.type}>{props.content}</Chat>
+    <Chat type={props.type} data-chat-type={props.type}>
+      {props.content}
+    </Chat>
     <Timer type={props.type} data-info="timer">
       {props.time}
     </Timer>

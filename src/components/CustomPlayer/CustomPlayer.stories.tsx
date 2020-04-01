@@ -6,6 +6,8 @@ import CustomPlayer from './CustomPlayer';
 
 export const defaultCustomPlayer = () => (
   <CustomPlayer
+    totalProgress={40}
+    musicName="Love song"
     onPlay={() => {
       console.log('play this budega');
     }}

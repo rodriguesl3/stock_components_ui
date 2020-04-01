@@ -3,12 +3,14 @@
 exports[`ChatBalloon it should render listener correctly 1`] = `
 <div>
   <styled.div
+    data-chat-type="listener"
     type="listener"
   >
     this is a test
   </styled.div>
   <styled.span
     data-info="timer"
+    type="listener"
   >
     08:00 am
   </styled.span>
@@ -18,12 +20,14 @@ exports[`ChatBalloon it should render listener correctly 1`] = `
 exports[`ChatBalloon it should render sender correctly 1`] = `
 <div>
   <styled.div
+    data-chat-type="sender"
     type="sender"
   >
     this is a test
   </styled.div>
   <styled.span
     data-info="timer"
+    type="sender"
   >
     08:00 am
   </styled.span>

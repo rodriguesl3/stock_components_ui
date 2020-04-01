@@ -14,7 +14,9 @@ const TooltipBalloon: React.FC<TooltipBalloonProps> = props => {
     <TooltipContainer>
       <TooltipHeader data-element="TooltipHeader">
         <h3>{props.title}</h3>
-        <IoMdClose onClick={props.onClose} />
+        <div className="close-tooltip" onClick={props.onClose}>
+          <IoMdClose />
+        </div>
       </TooltipHeader>
       <div className="content-container">{props.content}</div>
       <div className="bottom-container">{props.buttons.map(button => button)}</div>

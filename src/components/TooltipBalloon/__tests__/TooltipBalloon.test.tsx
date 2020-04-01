@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import TooltipBalloon from './TooltipBalloon';
+import TooltipBalloon from '../TooltipBalloon';
 import { Button } from 'antd';
 
 describe('<TooltipBalloon />', () => {
@@ -40,10 +40,9 @@ describe('<TooltipBalloon />', () => {
       />,
     );
 
-    wrapper.find('IoMdClose').simulate('click');
+    wrapper.find('.close-tooltip').simulate('click');
 
     const titleElement = wrapper.find('h3');
-    console.log(titleElement.text());
 
     expect(mockClose).toHaveBeenCalled();
     expect(mockClose).toHaveBeenCalledTimes(1);
