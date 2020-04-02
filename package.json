@@ -74,5 +74,10 @@
     "expect",
     "afterAll",
     "jest"
-  ]
+  ],
+  "storybook-deployer": {
+  "gitUsername": "GH Pages Bot",
+  "gitEmail": "hello@ghbot.com",
+  "commitMessage": "Deploy Storybook to GitHub Pages"
+}
 }
