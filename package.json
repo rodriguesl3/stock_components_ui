@@ -76,8 +76,8 @@
     "jest"
   ],
   "storybook-deployer": {
-  "gitUsername": "GH Pages Bot",
-  "gitEmail": "hello@ghbot.com",
+  "gitUsername": "rodriguesl3",
+  "gitEmail": "lucasfr@programmer.net",
   "commitMessage": "Deploy Storybook to GitHub Pages"
 }
 }
