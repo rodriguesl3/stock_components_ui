@@ -21,4 +21,4 @@ jobs:
     - run: env
     - run: pwd
     - run: npm install
-    - run: npm run deploy-storybook
+    - run: npm run deploy-storybook -- --ci --host-token-env-variable=${{ secrets.GH_TOKEN }}
