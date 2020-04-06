@@ -1,6 +1,6 @@
 {
-  "name": "@n2l/stock_components_ui",
-  "version": "1.0.0",
+  "name": "@rodriguesl3/stock_components_ui",
+  "version": "1.0.1",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
@@ -60,7 +60,6 @@
   "directories": {
     "lib": "lib"
   },
-  "description": "",
   "standard": {
     "ignore": [
       "node_modules/",
@@ -76,8 +75,20 @@
     "jest"
   ],
   "storybook-deployer": {
-  "gitUsername": "rodriguesl3",
-  "gitEmail": "lucasfr@programmer.net",
-  "commitMessage": "Deploy Storybook to GitHub Pages"
-}
+    "gitUsername": "rodriguesl3",
+    "gitEmail": "lucasfr@programmer.net",
+    "commitMessage": "Deploy Storybook to GitHub Pages"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodriguesl3/stock_components_ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rodriguesl3/stock_components_ui/issues"
+  },
+  "homepage": "https://github.com/rodriguesl3/stock_components_ui#readme",
+  "description": ""
 }
