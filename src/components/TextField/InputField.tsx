@@ -2,21 +2,21 @@ import React from 'react';
 import { InputContainer } from './InputField.style';
 
 interface InputFieldProps {
-  type: string;
-  componentId: string;
-  componentName: string;
   label: string;
-  width?: string;
-  height?: string;
 }
-const InputField: React.FC<InputFieldProps> = props => {
+
+type InputExtendType = InputFieldProps & React.InputHTMLAttributes<HTMLInputElement>;
+
+const InputField: React.FC<InputExtendType> = props => {
+  type forwardType = Exclude<InputFieldProps, 'label'>;
+
+  const forwardProps: forwardType = props;
+
   return (
     <InputContainer>
       <input
         className="custom-input"
-        type={props.type}
-        name={props.componentName}
-        id={props.componentId}
+        {...forwardProps}
         autoComplete="off"
         placeholder=" "
       />

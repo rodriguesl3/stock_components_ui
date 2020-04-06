@@ -5,18 +5,9 @@ import InputField from './InputField';
 export default { title: 'InputField' };
 
 export const UsualInputField = () => {
-  return (
-    <InputField label="welcome" componentId="my-id" componentName="my-name" type="text" />
-  );
+  return <InputField label="welcome" id="my-id" type="text" />;
 };
 
 export const PassworInputField = () => {
-  return (
-    <InputField
-      label="password"
-      componentId="my-id"
-      componentName="my-name"
-      type="password"
-    />
-  );
+  return <InputField label="password" id="my-id" type="password" />;
 };

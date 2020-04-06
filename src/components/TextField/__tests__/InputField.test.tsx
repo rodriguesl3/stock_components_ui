@@ -10,14 +10,7 @@ describe('<InputField />', () => {
     // const label = 'password';
     // const type = 'text';
 
-    const wrapper = shallow(
-      <InputField
-        componentId="my-login"
-        componentName="my-login"
-        label="login"
-        type="text"
-      />,
-    );
+    const wrapper = shallow(<InputField id="my-login" label="login" type="text" />);
 
     const inputElement = wrapper.find(`#${mockId}`);
 
